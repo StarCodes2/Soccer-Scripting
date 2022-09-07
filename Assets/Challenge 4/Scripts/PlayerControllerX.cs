@@ -26,7 +26,7 @@ public class PlayerControllerX : MonoBehaviour
     {
         // Add force to player in direction of the focal point (and camera)
         float verticalInput = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.Space))
         {
             playerRb.AddForce(focalPoint.transform.forward * verticalInput * (speed / 2) * Time.deltaTime, ForceMode.Impulse);
             smokeParticle.Play();
